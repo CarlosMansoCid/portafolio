@@ -1,60 +1,30 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
-import { useState, useEffect} from "react";
+import React from "react";
+import { useState } from "react";
+import "./NavBar.css";
 
-export const NavBar = () => {
+const NavBar = () =>{
 
-    const [ active, setActive ] = useState('home');
-    const [ scrolled, setScrolled ] = useState(false);
+    const [activeLink, setActiveLink] = useState("home");
 
-    useEffect(()=>{
-        const onScroll = () =>{
-            if(window.scrollY > 50){    
-                setScrolled = true;
-            }else{
-                setScrolled = false;
-            }
-        }
-        window.addEventListener("scroll", onScroll);
-
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [])
-
-    const onUpdateActiveLink = (value) =>{
-        setActive(value);   
+    function updateActiveLink(value){
+        setActiveLink(value);
     }
-
-
     return(
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-            <Container>
-                <Navbar.Brand href="home">
-                    <img src={''} alt="logo"/>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span className="navbar-toggler-icon"></span>
-                </Navbar.Toggle>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="navbar">
-                        <Nav.Link href="#home" 
-                                  className={active === 'home' ? 'active-navbar-link' : 'navbar-link'}
-                                  onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#skills" 
-                                  className={active === 'skills' ? 'active-navbar-link' : 'navbar-link'}
-                                  onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" 
-                                  className={active === 'projects' ? 'active-navbar-link' : 'navbar-link'}
-                                  onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
-                        <button className="vvd" onClick={() =>{console.log("conect")}}><span>Let's connect</span></button>
-                    </Nav>
-                    <span className="navbar-text">
-                        <div className="social-icon">
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                        </div>
-                    </span>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    );
+        <div clasname="navbar-container" >
+            <div className="links">
+                <img src="" alt="LOGO" className="logo"/>
+                <a href="#home" className={activeLink === "home" ? "active-link" : "link"} onClick={()=>updateActiveLink("home")}>Home</a>
+                <a href="#skills" className={activeLink === "skills" ? "active-link" : "link"} onClick={()=>updateActiveLink("skills")}>Skills</a>
+                <a href="#projects" className={activeLink === "projects" ? "active-link" : "link"} onClick={()=>updateActiveLink("projects")}>Projects</a>
+                <a href="#" className="social-icon"><img src="" alt=""/></a>
+                <a href="#" className="social-icon"><img src="" alt=""/></a>
+                <a href="#" className="social-icon"><img src="" alt=""/></a>
+                <a href="#" className="social-icon"><img src="" alt=""/></a>
+                <button className="contact-button">Let's contact!!</button>
+            </div>
+        </div>
+
+    )
 }
+
+export default NavBar;

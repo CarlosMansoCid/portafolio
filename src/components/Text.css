@@ -1,0 +1,39 @@
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+}
+    
+    
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+    
+    to {
+        background-position: 100% 50%;
+        }
+    
+}
+
+
+.greats{
+    font-size: 7rem;
+    padding-bottom: 0;
+}
+
+.name{
+    font-size: 4rem;
+    padding-bottom: 0;
+}
+
+.position{
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
