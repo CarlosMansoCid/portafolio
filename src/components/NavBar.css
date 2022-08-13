@@ -1,12 +1,11 @@
 .navbar-container{
     display: flex;
     width: 100%;
-
 }
 
 .link{
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
     color: #fff;
 }
 
@@ -14,7 +13,15 @@
     color: purple;
 }
 
+
+
 .active-link{
+    text-decoration: none;
+    color: purple;
+    margin: 20px;
+}
+
+.active-link:hover{
     text-decoration: none;
     color: purple;
     margin: 20px;
@@ -42,9 +49,9 @@
     font-weight: 700;
     color: purple;
     border: 1px solid purple;
-    padding: 18px 34px;
+    padding: 18px 34px 20px 20px;
     font-size: 18px;
-    margin-left: 18px;
+    margin: 10px;
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
@@ -58,60 +65,6 @@
 
 }
 
-/*.navbar-text button:hover::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.links{
+    background-color: #121212;
 }
-
- Nav.navbar .navbar-toggler:active,
- Nav.navbar .navbar-toggler:focus{
-    outline: none;
-    box-shadow: none;
- }
-
- Nav.navbar .navbar-toggler-icon{
-    width: 24px;
-    height: 17px;
-    background-image: none;
-    position: relative;
-    border-bottom: 2px solid #fff;
-    transition: all 300ms linear;
-    top: -2px;
- } 
-
- nav.navbar .navbar-toggler-icon:after,
- nav.navbar .navbar-toggler-icon:before{
-    width: 24px;
-    position: absolute;
-    height: 2px;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    content: '';
-    z-index: 2;
-    transition: all 300ms linear;
- }
-
- nav.navbar .navbar-toggler-icon::after{
-    top: 8px;
- }
-
- nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after{
-    transform: rotate(45deg);
-    background-color: #fff;
-    height: 2px;
- }
-
- nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-    transform: rotate(45deg);
-    background-color: #fff;
-    height: 2px;
- }
-
- nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
-    border-color: transparent;
- } */ 
-
- 

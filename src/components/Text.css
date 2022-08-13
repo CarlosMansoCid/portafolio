@@ -6,7 +6,9 @@
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
     background-clip: text;
     animation: color 3s linear infinite;
-    background-size: 500%;    
+    background-size: 500%;   
+    padding-bottom: 14%;
+    padding-top: 5%;
 }
     
     
@@ -37,4 +39,6 @@
     padding-bottom: 0;
 }
 
- 
+.text-container{
+    background-color: #161616;
+}
