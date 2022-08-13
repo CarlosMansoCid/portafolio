@@ -9,7 +9,7 @@ const NavBar = () =>{
     function updateActiveLink(value){
         setActiveLink(value);
     }
-    return( 
+    return(  
         <div clasname="navbar-container" >
             <div className="links">
                 <img src="" alt="LOGO" className="logo"/>

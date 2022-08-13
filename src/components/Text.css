@@ -1,6 +1,6 @@
 .text{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
     color: transparent;
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
