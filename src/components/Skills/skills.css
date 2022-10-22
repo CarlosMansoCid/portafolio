@@ -1,0 +1,100 @@
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 25px;
+    background-color: #101010;
+    width: 96%;
+    margin: 4rem auto;
+}
+.skills-tittle-tag-container{
+    margin-bottom: 3rem;
+}
+
+.skills-tittle-tag{
+    color: #666;
+}
+
+.skills-cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+.skill-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skill-card{
+    color: #666;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    font-size: 100px;
+    transition: .2s;
+}
+
+.react:hover{
+    color: #61dbfb;
+    transform: scale(1.5);
+}
+.html:hover{
+    color: #F06529;
+    transform: scale(1.5);
+}
+.css:hover{
+    color: #264de4;
+    transform: scale(1.5);
+}
+.sass:hover{
+    color: #CD6799;
+    transform: scale(1.5);
+}
+.npm:hover{
+    color: #CC3534;
+    transform: scale(1.5);
+}
+.firebase:hover{
+    color: #FFA611;
+    transform: scale(1.5);
+}
+.linux:hover{
+    color: #D80150;
+    transform: scale(1.5);
+}
+.js:hover{
+    color: #f7df1e;
+    transform: scale(1.5);
+}
+.windows:hover{
+    color: #00adef;
+    transform: scale(1.5);
+}
+.github:hover{
+    color: #fff;
+    transform: scale(1.5);
+}
+.jira:hover{
+    color: #0052CC;
+    transform: scale(1.5);
+}
+
+
+@media screen  and (max-width:600px){
+
+    .skill-card{
+        font-size: 50px;
+    }
+}

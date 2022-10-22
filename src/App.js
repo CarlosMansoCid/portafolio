@@ -1,14 +1,20 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Text from './components/Text';  
+import Home from './views/Home/Home';
+import { Route, Routes} from 'react-router-dom';
+
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-      <Text/>
-    </div>
-  );
+
+  
+  return(
+    <>
+      <Routes>
+        <Route exact path='/' element={<Home/>}></Route>
+      </Routes>
+    </>
+
+  ); 
 }
+
 
 export default App;
