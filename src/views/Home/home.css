@@ -1,0 +1,59 @@
+.text-container{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;   
+    padding-bottom: 5%;
+    overflow: hidden;
+} 
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+    
+    
+@keyframes color { 
+    from {
+        background-position: 0% 50%;
+    }
+    
+    to {
+        background-position: 100% 50%;
+        }
+    
+}
+
+
+.greats{
+    font-size: 7rem;
+    margin-bottom: 0;
+}
+
+.name{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.position{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+@media screen  and (max-width:600px){
+
+    .greats{
+        font-size: 3.5rem;
+    }
+    .name{
+        font-size:2rem;
+    }
+    .position{
+        font-size: 1rem;
+    }
+
+}
